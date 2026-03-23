@@ -3,7 +3,7 @@
     {
       "name": "Get messages",
       "method": "GET",
-      "path": "/messages",
+      "path": "/?action=messages",
       "expectedStatus": 200,
       "expectedBody": {"messages": []},
       "bodyMatcher": "partial"
@@ -11,7 +11,7 @@
     {
       "name": "Get online users",
       "method": "GET",
-      "path": "/online",
+      "path": "/?action=online",
       "expectedStatus": 200,
       "expectedBody": {"users": []},
       "bodyMatcher": "partial"
@@ -19,7 +19,7 @@
     {
       "name": "Get stats",
       "method": "GET",
-      "path": "/stats",
+      "path": "/?action=stats",
       "expectedStatus": 200,
       "expectedBody": {"users_count": 0},
       "bodyMatcher": "partial"
@@ -27,7 +27,7 @@
     {
       "name": "Login user",
       "method": "POST",
-      "path": "/login",
+      "path": "/?action=login",
       "body": {"username": "TestUser"},
       "expectedStatus": 200,
       "expectedBody": {"user": {"username": "TestUser"}},

@@ -1,19 +1,5 @@
-import { Header } from "@/components/Header"
-import { HeroSection } from "@/components/HeroSection"
-import { PartnersSection } from "@/components/PartnersSection"
-import { FeaturesSection } from "@/components/FeaturesSection"
+import ChatPage from "./ChatPage"
 
 export default function Index() {
-  return (
-    <main className="min-h-screen bg-[#0a0a0a]">
-      <Header />
-      <HeroSection />
-      <PartnersSection />
-      <FeaturesSection />
-      <footer className="py-8 text-center text-sm text-gray-400">
-        Один чат — всё общение.{" "}
-        <span className="font-medium text-white">Chill Zone — твоё пространство.</span>
-      </footer>
-    </main>
-  )
+  return <ChatPage />
 }
